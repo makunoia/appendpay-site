@@ -4,10 +4,9 @@ import Stack from "@/components/molecules/Stack";
 import { Alignment, Fit, Layout, useRive } from "@rive-app/react-canvas";
 import { useEffect } from "react";
 import Button from "@/components/Button";
-// import { useEffect, useState } from "react";
 
 const MFISection = () => {
-  const layout = new Layout({ fit: Fit.Contain, alignment: Alignment.Center });
+  const layout = new Layout({ fit: Fit.Cover, alignment: Alignment.Center });
   const autoplay = false;
   const src = "/rive/appendpay_motion.riv";
 
@@ -24,21 +23,27 @@ const MFISection = () => {
   }, [PartnersGridRive]);
 
   return (
-    <Stack horizontal distribute="between" as="section" gap={24}>
-      <Stack gap={8} className="w-1/6 md:w-3/6">
+    <Stack
+      className="flex flex-col md:flex-row gap-ds-60 lg:gap-ds-24"
+      distribute="between"
+      as="section"
+      gap={24}
+    >
+      <Stack gap={8} className="w-full lg:w-3/6 order-2 md:order-1">
         <Text as="h2" size="display" weight="bold" className="brandedText">
-          Partners
+          Microfinance Institutions partners
         </Text>
+
         <Text as="p" size="body-large" lineHeight="relaxed" className="text">
-          Lorem ipsum dolor sit amet consectetur. Egestas lorem enim egestas leo
-          diam eget. Egestas scelerisque tincidunt sit fames hac dictum.
+          Streamlined processes for client acquisition, onboarding new and
+          existing clients, disbursement, payment and recording
         </Text>
         <Button intent="primary" size="large" className="mt-ds-8">
           Join as Partner
         </Button>
       </Stack>
 
-      <div className="w-fit aspect-square h-[400px]">
+      <div className="w-fit mx-auto aspect-square h-[300px] lg:h-[400px] order-1 md:order-2">
         <PartnersGrid />
       </div>
     </Stack>

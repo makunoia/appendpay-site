@@ -80,14 +80,14 @@ const FeaturesSection = () => {
         <MotionCard
           title="Bank Transfer"
           desc="Magpadala ng pera sa ibang bangko"
-          className="row-span-2 col-span-3 h-[100%]"
+          className="row-span-2 col-span-10 md:col-span-5 lg:col-span-3 h-[350px] md:h-[100%]"
           riveComponent={<BankTransfer />}
         />
 
         <MotionCard
           title="Send and Receive funds"
           desc="Convenient transactions sa iyong account"
-          className="row-span-1 col-span-4 h-[200px]"
+          className="row-span-1 col-span-10 md:col-span-5 lg:col-span-4 h-[200px]"
           invertStack
           riveComponent={<FastTransfer />}
         />
@@ -95,7 +95,7 @@ const FeaturesSection = () => {
         <MotionCard
           title="Load Mobile"
           desc="Iwasang maubusan ng data"
-          className="row-span-1 col-span-3 h-[200px]"
+          className="row-span-1 col-span-5 lg:col-span-3 h-[200px]"
           invertStack
           riveComponent={<Message />}
         />
@@ -103,7 +103,7 @@ const FeaturesSection = () => {
         <MotionCard
           title="Bills Payment"
           desc="Bayaran ang iyong bills"
-          className="row-span-1 col-span-3 h-[200px]"
+          className="row-span-1 col-span-5 lg:col-span-3 h-[200px]"
           invertStack
           riveComponent={<PayBills />}
         />
@@ -111,7 +111,7 @@ const FeaturesSection = () => {
         <MotionCard
           title="Micropay"
           desc="Bayaran ang loans sa mga MFI"
-          className="row-span-1 col-span-4 h-[200px]"
+          className="row-span-1 col-span-10 md:col-span-5 lg:col-span-4 h-[200px]"
           invertStack
           riveComponent={<MFI />}
         />

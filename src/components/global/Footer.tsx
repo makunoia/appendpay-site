@@ -15,7 +15,10 @@ const Footer = () => {
         priority
       />
 
-      <Stack horizontal distribute="between" className="w-2/4">
+      <Stack
+        distribute="between"
+        className="w-full gap-ds-32 lg:flex-row lg:w-2/4"
+      >
         <Stack gap={8}>
           <Text size="body" weight="medium" className="text-brand">
             Sitemap
