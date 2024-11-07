@@ -24,7 +24,7 @@ const MissionVision = () => {
           The demand-driven digital financial services we offer to our partner
           MFIs ensure that, despite the shift towards digitalization, they can
           maintain high-touch support for their clients, affectionately known as
-          "Nanays" (a Filipino term for "mothers").
+          Nanays (a Filipino term for mothers).
         </div>
         <Stack gap={16} align="end" className="w-6/12">
           <h1 className="brandedText text-right font-bold text-brand leading-[2.8rem] text-[2.5rem]">
