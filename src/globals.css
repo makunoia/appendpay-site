@@ -21,7 +21,16 @@
   footer {
     background-image: url(../public/footer_background.svg);
     background-repeat: no-repeat;
-    background-position: 100% -15%;
+    background-position: 110% -20%;
+
+    @media screen and (max-width: 600px) {
+      background-position: 10% -30%;
+    }
+
+    @media screen and (max-width: 425px) {
+      background-position: 20% -40%;
+      background-size: 90vh;
+    }
   }
 }
 

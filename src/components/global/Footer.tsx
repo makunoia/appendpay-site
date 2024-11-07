@@ -6,7 +6,7 @@ import Text from "../molecules/Text";
 
 const Footer = () => {
   return (
-    <footer className="h-[40vh] pt-[20%] pb-[15%] px-[5%] w-full bg-interface border border-t-brand mt-[10%] flex flex-col justify-center place-items-start gap-ds-32">
+    <footer className="h-fit py-[10%] lg:h-[20vh] lg:pt-[20%] lg:pb-[15%] px-[5%] w-full bg-interface border border-t-brand mt-[10%] flex flex-col justify-center place-items-start gap-ds-32">
       <Image
         src="/logo.svg"
         alt="AppendPay Logo"
@@ -17,7 +17,7 @@ const Footer = () => {
 
       <Stack
         distribute="between"
-        className="w-full gap-ds-32 lg:flex-row lg:w-2/4"
+        className="gap-ds-32 lg:flex-row w-full md:w-6/12"
       >
         <Stack gap={8}>
           <Text size="body" weight="medium" className="text-brand">
@@ -26,8 +26,8 @@ const Footer = () => {
 
           <div className="grid grid-cols-2 grid-rows-2">
             <Link label="About Us" href="/about" />
+            <Link label="Benefits" href="#partners" />
             <Link label="Our Technology Partner" href="/tech-partner" />
-            <Link label="Key Benefits" href="#partners" />
             <Link label="Be an MFI Partner" href="#technology" />
             <Link label="Privacy Policy" href="#technology" />
             <Link label="Terms and Conditions" href="#technology" />

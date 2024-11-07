@@ -74,7 +74,7 @@ const LoanSection = () => {
         <MotionCard
           title="I-download ang app"
           desc="Available both on Android and iOS"
-          className="h-[380px]"
+          className="h-[500px] md:h-[380px]"
           riveComponent={<DownloadApp />}
         />
 
