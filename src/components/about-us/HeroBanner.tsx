@@ -5,12 +5,13 @@ import { Alignment, Fit } from "@rive-app/canvas";
 
 const HeroBanner = () => {
   return (
-    <div className="relative h-[80vh] md:h-[90vh] lg:h-[450px] flex justify-end w-full rounded-ds-16 mt-6 overflow-clip">
+    <div className="relative mx-[5%] h-[80vh] md:h-[90vh] lg:h-[450px] flex justify-end w-auto rounded-ds-16 mt-6 overflow-clip">
       <RiveComponent
         className="absolute -z-10 top-20 lg:top-0 right-0 left-0 w-full h-full"
-        src="/rive/hero_banner.riv"
-        stateMachines="HERO_BANNER"
-        layout={{ fit: Fit.FitWidth, alignment: Alignment.Center }}
+        src="/rive/banners.riv"
+        stateMachines="DEFAULT"
+        artboard="AboutUs"
+        layout={{ fit: Fit.Cover, alignment: Alignment.Center }}
         autoplay={true}
       />
 

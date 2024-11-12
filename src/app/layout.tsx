@@ -23,10 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter} antialiased`}>
-        <main className="my-10 mx-[5%]">
-          <Navbar />
-          {children}
-        </main>
+        <Navbar />
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

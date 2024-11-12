@@ -8,8 +8,9 @@ const HeroBanner = () => {
     <div className="relative h-[80vh] md:h-[90vh] lg:h-[550px] flex justify-end w-full rounded-ds-16 mt-6 overflow-clip">
       <RiveComponent
         className="absolute -z-10 top-20 lg:top-0 right-0 left-0 w-full h-full"
-        src="/rive/hero_banner.riv"
-        stateMachines="HERO_BANNER"
+        src="/rive/banners.riv"
+        stateMachines="DEFAULT"
+        artboard="Background"
         layout={{ fit: Fit.FitWidth, alignment: Alignment.Center }}
         autoplay={true}
       />

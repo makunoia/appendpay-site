@@ -4,7 +4,7 @@ import NextLink from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex w-full justify-between items-center">
+    <nav className="flex w-full justify-between items-center px-[5%] mt-10">
       <NextLink href="/">
         <Image
           src="/logo.svg"

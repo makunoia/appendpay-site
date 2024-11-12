@@ -8,7 +8,7 @@ import MFISection from "@/components/homepage/MFISection";
 
 export default function Home() {
   return (
-    <Stack className="gap-[100px]">
+    <Stack className="gap-[100px] mx-[5%]">
       <HeroBanner />
       <LoanSection />
       <FeaturesSection />
