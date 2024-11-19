@@ -7,9 +7,9 @@ import { easeOut } from "framer-motion";
 
 const HeroBanner = () => {
   return (
-    <div className="relative mx-[5%] h-[80vh] md:h-[90vh] lg:h-[450px] flex justify-end w-auto rounded-ds-16 mt-6 overflow-clip">
+    <div className="relative mx-[5%] h-[80vw] md:h-[50vw] lg:max-h-[450px]  flex justify-end w-auto rounded-ds-16 mt-6 overflow-clip">
       <RiveComponent
-        className="absolute -z-10 top-20 lg:top-0 right-0 left-0 w-full h-full"
+        className="absolute -z-10  lg:top-0 right-0 left-0 w-full h-full"
         src="/rive/banners.riv"
         stateMachines="DEFAULT"
         artboard="AboutUs"
@@ -29,14 +29,14 @@ const HeroBanner = () => {
         transition={{ ease: easeOut }}
         className="absolute items-center z-10 w-full h-fit top-[50%]"
       >
-        <h1 className="brandedText text-center lg:text-left font-bold text-brand leading-[2.8rem] text-[2.5rem] lg:leading-[3rem] lg:text-[3rem]">
+        <h1 className="brandedText text-center lg:text-left font-bold text-brand leading-[2.8rem] text-[2rem] md:text-[2.5rem] lg:leading-[3rem] lg:text-[3rem]">
           About AppendPay
         </h1>
 
         <Text
           size="body"
           lineHeight="relaxed"
-          className="text text-center w-7/12"
+          className="text text-center w-8/12 lg:w-7/12"
         >
           AppendPay is pioneering digital financial inclusion in the Philippines
           with a payment system specifically designed for microfinance

@@ -16,10 +16,10 @@ const HeroBanner = () => {
       />
 
       <Image
-        className="absolute scale-75 md:scale-100 bottom-[-60%] md:bottom-[-70%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[10%] lg:top-[5%]"
+        className="absolute top-[400px] md:bottom-[-70%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[10%] lg:top-[5%]"
         src="/hero_image.png"
         width={350}
-        height={200}
+        height={500}
         alt="App Store Badge"
       />
 
@@ -31,7 +31,7 @@ const HeroBanner = () => {
         gap={32}
         className="absolute items-center lg:items-start z-10 w-10/12 top-[10%] lg:max-w-lg h-fit lg:top-[100px] left-[10%] lg:left-auto lg:right-[3%] xl:right-[5%]"
       >
-        <h1 className="brandedText text-center lg:text-left font-bold text-brand leading-[2.8rem] text-[2.5rem] md:leading-[4rem] md:text-[4rem] lg:leading-[4.5rem] lg:text-[4.5rem]">
+        <h1 className="brandedText text-center lg:text-left font-bold text-brand leading-[3rem] text-[3rem] md:leading-[4rem] md:text-[4rem] lg:leading-[4.5rem] lg:text-[4.5rem]">
           Micro-loans para sa mga mamamayang Pilipino
         </h1>
 

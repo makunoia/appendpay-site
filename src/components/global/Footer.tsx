@@ -6,7 +6,7 @@ import Text from "../molecules/Text";
 
 const Footer = () => {
   return (
-    <footer className="h-fit py-[10%] lg:h-[20vh] lg:pt-[20%] lg:pb-[15%] px-[5%] w-full bg-interface border border-t-brand mt-[10%] flex flex-col justify-center place-items-start gap-ds-32">
+    <footer className="h-fit max-h-[800px] py-[5%] px-[5%] w-full bg-interface border border-t-brand mt-[10%] flex flex-col justify-center place-items-start gap-ds-32">
       <Image
         src="/logo.svg"
         alt="AppendPay Logo"
