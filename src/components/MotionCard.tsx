@@ -24,7 +24,7 @@ const MotionCard = ({
       gap={16}
       distribute="between"
       className={cn(
-        "w-full h-fit outline outline-subtle rounded-ds-16 overflow-clip",
+        "w-full h-fit outline outline-1 outline-subtle rounded-ds-16 overflow-clip",
         className
       )}
       {...props}

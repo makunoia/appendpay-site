@@ -17,9 +17,9 @@ const Footer = () => {
 
       <Stack
         distribute="between"
-        className="gap-ds-32 lg:flex-row w-full md:w-6/12"
+        className="gap-ds-24 lg:flex-row w-full md:w-7/12"
       >
-        <Stack gap={8}>
+        <Stack gap={8} className="w-[80%]">
           <Text size="body" weight="medium" className="text-brand">
             Sitemap
           </Text>

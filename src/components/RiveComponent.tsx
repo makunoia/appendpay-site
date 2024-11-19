@@ -30,8 +30,6 @@ const RiveComponent = ({
       layout ? layout : { fit: Fit.Contain, alignment: Alignment.Center }
     ),
     autoplay,
-    onLoadError: () => console.log("ERROR LOADING RIVE"),
-    onLoad: () => console.log("LOADED RIVE"),
   });
 
   return <RiveComponent className={className} />;

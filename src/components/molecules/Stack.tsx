@@ -1,6 +1,11 @@
 import { type ReactNode } from "react";
 import { type VariantProps, cva } from "class-variance-authority";
-
+import {
+  AnimationProps,
+  motion as FramerMotion,
+  HTMLMotionProps,
+  MotionAdvancedProps,
+} from "framer-motion";
 import { cn } from "../../utilities";
 
 type NonNullableProps<T> = {
@@ -62,12 +67,24 @@ const StackStyles = cva("flex", {
 
 type StackCVAProps = NonNullableProps<VariantProps<typeof StackStyles>>;
 
-interface StackProps extends StackCVAProps {
+interface BaseStackProps extends StackCVAProps {
   children: ReactNode;
   className?: string;
   as?: "div" | "section" | "header" | "footer" | "nav" | "main";
   horizontal?: boolean;
 }
+
+type StaticStackProps = {
+  motion?: false;
+};
+
+type MotionStackProps = {
+  motion: true;
+  as?: never;
+} & ((AnimationProps | MotionAdvancedProps) &
+  Omit<HTMLMotionProps<"div">, keyof BaseStackProps>);
+
+type StackProps = BaseStackProps & (StaticStackProps | MotionStackProps);
 
 const Stack = ({
   as: Component = "div",
@@ -80,6 +97,7 @@ const Stack = ({
   distribute,
   children,
   className,
+  motion,
   ...props
 }: StackProps) => {
   const styles = cn(
@@ -95,8 +113,21 @@ const Stack = ({
     className
   );
 
+  if (motion) {
+    const motionProps = props as Omit<
+      HTMLMotionProps<"div">,
+      keyof BaseStackProps
+    >;
+    return (
+      <FramerMotion.div className={styles} {...motionProps}>
+        {children}
+      </FramerMotion.div>
+    );
+  }
+
+  const staticProps = props as Omit<StaticStackProps, keyof BaseStackProps>;
   return (
-    <Component className={styles} {...props}>
+    <Component className={styles} {...staticProps}>
       {children}
     </Component>
   );
