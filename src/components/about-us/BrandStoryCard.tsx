@@ -5,18 +5,18 @@ import { cn } from "@/utilities";
 const BrandStoryCard = ({
   title,
   copy,
-  // align,
   className,
+  id,
 }: {
   title: string;
   copy: string;
-  align?: "start" | "end";
   className?: string;
+  id?: string;
 }) => {
   return (
     <Stack
+      id={id}
       gap={10}
-      // align={!align ? "center" : align}
       className={cn(
         "bg bg-surface drop-shadow pb-ds-24 px-ds-24 rounded-ds-16 w-fit h-fit mx-auto",
         className
@@ -25,17 +25,7 @@ const BrandStoryCard = ({
       <h2 className="text-display text-brand w-full -mt-4">
         {title ?? "Give Title"}
       </h2>
-      <Text
-        size="body"
-        lineHeight="tight"
-        // className={`text ${
-        //   !align
-        //     ? "text-center"
-        //     : align === "start"
-        //     ? "text-left"
-        //     : "text-right"
-        // }`}
-      >
+      <Text size="body" lineHeight="tight">
         {copy ?? "Provide copy"}
       </Text>
     </Stack>
