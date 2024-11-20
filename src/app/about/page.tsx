@@ -1,3 +1,5 @@
+"use client";
+
 import Stack from "@/components/molecules/Stack";
 import HeroBanner from "@/components/about-us/HeroBanner";
 import MissionVision from "@/components/about-us/MissionVision";

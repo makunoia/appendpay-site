@@ -6,6 +6,7 @@ import RiveComponent from "@/components/RiveComponent";
 import { Alignment, Fit, Layout } from "@rive-app/canvas";
 import { animate, easeOut, inView } from "framer-motion";
 import { useRive } from "@rive-app/react-canvas";
+import { useEffect } from "react";
 
 const BrandStory = () => {
   const layout = new Layout({ fit: Fit.Contain, alignment: Alignment.Center });
@@ -35,12 +36,13 @@ const BrandStory = () => {
     layout,
     autoplay,
   });
+
   const animationOrchestration = () => {
     // Helper function to create a promise-based delay
     const delay = (ms: number) =>
       new Promise((resolve) => setTimeout(resolve, ms));
 
-    const animate1 = async () => {
+    const animateTimeline = async () => {
       animate("#firstCard", { opacity: 1, y: 0 });
       Path1Rive?.play();
 
@@ -54,16 +56,19 @@ const BrandStory = () => {
       animate("#thirdCard", { opacity: 1, y: 0 });
       Path3Rive?.play();
 
-      await delay(1000); // Additional 1s delay (3.0s total)
+      await delay(700); // Additional 1s delay (3.0s total)
 
       animate("#fourthCard", { opacity: 1, y: 0 });
     };
 
-    animate1();
+    animateTimeline();
   };
 
-  inView("#timeline", () => {
-    animationOrchestration();
+  useEffect(() => {
+    const timeline = document.getElementById("timeline");
+    inView(timeline ? timeline : "#timeline", () => {
+      animationOrchestration();
+    });
   });
 
   return (
@@ -121,7 +126,7 @@ const BrandStory = () => {
       </Stack>
 
       <div
-        className="grid grid-cols-11 gap-y-ds-32 md:gap-y-[0] align items-center"
+        className="append-timeline grid grid-cols-11 gap-y-ds-32 md:gap-y-[0] align items-center"
         id="timeline"
       >
         {/* 2010 CARD - FIRST CARD */}

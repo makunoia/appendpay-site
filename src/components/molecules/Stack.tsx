@@ -1,3 +1,5 @@
+"use client";
+
 import { type ReactNode } from "react";
 import { type VariantProps, cva } from "class-variance-authority";
 import {
@@ -68,6 +70,7 @@ const StackStyles = cva("flex", {
 type StackCVAProps = NonNullableProps<VariantProps<typeof StackStyles>>;
 
 interface BaseStackProps extends StackCVAProps {
+  id?: string;
   children: ReactNode;
   className?: string;
   as?: "div" | "section" | "header" | "footer" | "nav" | "main";
@@ -97,6 +100,7 @@ const Stack = ({
   distribute,
   children,
   className,
+  id,
   motion,
   ...props
 }: StackProps) => {
@@ -113,21 +117,19 @@ const Stack = ({
     className
   );
 
-  if (motion) {
-    const motionProps = props as Omit<
-      HTMLMotionProps<"div">,
-      keyof BaseStackProps
-    >;
-    return (
-      <FramerMotion.div className={styles} {...motionProps}>
-        {children}
-      </FramerMotion.div>
-    );
-  }
+  const motionProps = props as Omit<
+    HTMLMotionProps<"div">,
+    keyof BaseStackProps
+  >;
 
   const staticProps = props as Omit<StaticStackProps, keyof BaseStackProps>;
-  return (
-    <Component className={styles} {...staticProps}>
+
+  return motion ? (
+    <FramerMotion.div id={id} className={styles} {...motionProps}>
+      {children}
+    </FramerMotion.div>
+  ) : (
+    <Component id={id} className={styles} {...staticProps}>
       {children}
     </Component>
   );
