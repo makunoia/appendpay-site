@@ -1,5 +1,8 @@
 import React from "react";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+// import Lottie from "lottie-react";
 import { type ReactElement } from "react";
 import { type IconType } from "react-icons";
 import { Slot } from "@radix-ui/react-slot";

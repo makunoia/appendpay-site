@@ -75,6 +75,7 @@ interface BaseStackProps extends StackCVAProps {
   className?: string;
   as?: "div" | "section" | "header" | "footer" | "nav" | "main";
   horizontal?: boolean;
+  key?: string;
 }
 
 type StaticStackProps = {
@@ -102,6 +103,7 @@ const Stack = ({
   className,
   id,
   motion,
+  key,
   ...props
 }: StackProps) => {
   const styles = cn(
@@ -125,11 +127,11 @@ const Stack = ({
   const staticProps = props as Omit<StaticStackProps, keyof BaseStackProps>;
 
   return motion ? (
-    <FramerMotion.div id={id} className={styles} {...motionProps}>
+    <FramerMotion.div key={key} id={id} className={styles} {...motionProps}>
       {children}
     </FramerMotion.div>
   ) : (
-    <Component id={id} className={styles} {...staticProps}>
+    <Component key={key} id={id} className={styles} {...staticProps}>
       {children}
     </Component>
   );
