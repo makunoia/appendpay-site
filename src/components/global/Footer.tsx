@@ -6,7 +6,7 @@ import Text from "../molecules/Text";
 
 const Footer = () => {
   return (
-    <footer className="h-fit max-h-[800px] py-[5%] px-[5%] w-full bg-interface border border-t-brand mt-[10%] flex flex-col justify-center place-items-start gap-ds-32">
+    <footer className="h-fit max-h-[800px] py-[5%] px-[5%] w-full bg-interface border-t-4 border-t-brand flex flex-col justify-center place-items-start gap-ds-32">
       <Image
         src="/logo.svg"
         alt="AppendPay Logo"
@@ -28,9 +28,9 @@ const Footer = () => {
             <Link label="About Us" href="/about" />
             <Link label="Benefits" href="#partners" />
             <Link label="Our Technology Partner" href="/tech-partner" />
-            <Link label="Be an MFI Partner" href="#technology" />
-            <Link label="Privacy Policy" href="#technology" />
-            <Link label="Terms and Conditions" href="#technology" />
+            <Link label="Be an MFI Partner" href="/sign-up" />
+            <Link label="Privacy Policy" href="/privacy-policy" />
+            <Link label="Terms and Conditions" href="/terms-and-conditions" />
           </div>
         </Stack>
 

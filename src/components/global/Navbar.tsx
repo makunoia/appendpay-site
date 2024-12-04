@@ -16,10 +16,10 @@ const Navbar = () => {
       </NextLink>
 
       <div className="flex flex-row gap-ds-24 text-heading">
-        <Link label="Loans" href="#loans" />
-        <Link label="Features" href="#features" />
-        <Link label="Our Partners" href="#partners" />
-        <Link label="Benefits" href="#benefits" />
+        <Link label="Loans" href="/#loans" />
+        <Link label="Features" href="/#features" />
+        <Link label="Partners" href="/#partners" />
+        <Link label="Benefits" href="/#benefits" />
         <Link label="About Us" href="/about" />
       </div>
     </nav>

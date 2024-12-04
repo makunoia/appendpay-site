@@ -65,7 +65,7 @@ const FeaturesSection = () => {
   }, 2000);
 
   return (
-    <Stack as="section" gap={24}>
+    <Stack id="features" as="section" gap={24}>
       <Stack gap={8} className="w-full md:w-4/6">
         <Text as="h2" size="display" weight="bold" className="brandedText">
           Our Products and Services

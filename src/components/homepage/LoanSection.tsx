@@ -59,7 +59,7 @@ const LoanSection = () => {
   }, 2000);
 
   return (
-    <Stack as="section" gap={24}>
+    <Stack id="loans" as="section" gap={24}>
       <Stack gap={8} className="w-full md:w-4/6">
         <Text as="h2" size="display" weight="bold" className="brandedText">
           Paano mag-loan sa AppendPay?

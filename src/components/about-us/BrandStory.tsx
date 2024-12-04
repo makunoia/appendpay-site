@@ -43,6 +43,7 @@ const BrandStory = () => {
       new Promise((resolve) => setTimeout(resolve, ms));
 
     const animateTimeline = async () => {
+      await delay(2000);
       animate("#firstCard", { opacity: 1, y: 0 });
       Path1Rive?.play();
 
@@ -72,13 +73,13 @@ const BrandStory = () => {
   });
 
   return (
-    <Stack justify="center" gap={60}>
+    <Stack justify="center" gap={60} className="pb-ds-60">
       <Stack gap={8} className="relative overflow-visible">
         <Stack
           motion
           initial={{ y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ ease: easeOut }}
+          transition={{ ease: easeOut, delay: 1 }}
           viewport={{ once: true }}
           gap={8}
           className="opacity-0 w-8/12 lg:w-6/12 mx-auto"
@@ -110,7 +111,7 @@ const BrandStory = () => {
         motion
         initial={{ y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ ease: easeOut }}
+        transition={{ ease: easeOut, delay: 1 }}
         viewport={{ once: true }}
         gap={24}
         className="bg opacity-0 bg-surface drop-shadow pb-ds-40 px-ds-40 lg:px-ds-60 rounded-b-[50px] w-11/12 lg:w-7/12 mx-auto"

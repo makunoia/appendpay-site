@@ -3,6 +3,7 @@ import Text from "@/components/molecules/Text";
 import Stack from "@/components/molecules/Stack";
 import { Alignment, Fit, Layout, useRive } from "@rive-app/react-canvas";
 import { useEffect } from "react";
+import Button from "../Button";
 // import Button from "@/components/Button";
 
 const MFISection = () => {
@@ -26,8 +27,10 @@ const MFISection = () => {
     <Stack
       className="flex flex-col md:flex-row gap-ds-60 lg:gap-ds-24"
       distribute="between"
+      align="center"
       as="section"
       gap={24}
+      id="partners"
     >
       <Stack gap={8} className="w-full lg:w-3/6 order-2 md:order-1">
         <Text as="h2" size="display" weight="bold" className="brandedText">
@@ -39,10 +42,9 @@ const MFISection = () => {
           existing clients, disbursement, payment and recording
         </Text>
 
-        {/* Maybe we can add a signup button here */}
-        {/* <Button intent="primary" size="large" className="mt-ds-8">
+        <Button intent="primary" size="large" className="mt-ds-8">
           Join as Partner
-        </Button> */}
+        </Button>
       </Stack>
 
       <div className="w-fit mx-auto aspect-square h-[300px] lg:h-[400px] order-1 md:order-2">
