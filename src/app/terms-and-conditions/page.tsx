@@ -158,7 +158,7 @@ const Page = () => {
 
       <Stack as="section" gap={8}>
         <Text size="title" weight="medium" className="text-brand">
-          Customer's Consent and Declaration
+          Customer&apos;s Consent and Declaration
         </Text>
 
         <Text lineHeight="relaxed">
