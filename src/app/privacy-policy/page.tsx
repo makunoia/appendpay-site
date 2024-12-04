@@ -11,7 +11,7 @@ const Page = () => {
         className="h-[250px] w-full bg-brand-subtle rounded-ds-16"
       >
         <Text size="overline" className="text-onBrand-subtle" weight="bold">
-          Updated December 2024
+          Updated December 2023
         </Text>
         <Text size="display" className="text-onBrand-subtle" weight="bold">
           Privacy Policy
@@ -26,13 +26,13 @@ const Page = () => {
           APPEND Inc. is a non-stock, non-profit, charitable, social welfare
           development & civic service organization established in 1991 that
           continues to transform people and communities for more than 27 years.
-          Our ​AppendPay​ app is a next generation mobile application and online
+          Our AppendPay app is a next generation mobile application and online
           system that links APPEND members around the country to a wide array of
           loan platforms and eCommerce channels. Append aims to provide an
           automated payment of AppendPay’s registered MFI and Application of MFI
-          Loan servicethat will help the user to have a convenient and secured
+          Loan service that will help the user to have a convenient and secured
           transaction. At Append, we recognize the importance of data privacy,
-          and commit to protecting the confidentiality ofall of our clients. In
+          and commit to protecting the confidentiality of all of our clients. In
           line with this, we ensure that we comply with the Data Privacy Act of
           2012 (RA10173), along with its Implementing Rules and Regulations as
           well as any other relevant data privacyrelated laws and issuances by
@@ -41,14 +41,15 @@ const Page = () => {
           platform. In accordance with this, this privacy policy will detail any
           necessary information about how AppendPay will collect, process, and
           store your personal data. This includes how long we will retain the
-          information,all your privacy rights in relation to that data, and the
-          people/organizations with whom we may share itwith when necessary. The
-          content of this Privacy Statement may be updated or amended from time
-          to time to align with anyfuture platform configurations, and to comply
-          with any changes in relevant laws and policies. Shouldthese changes
-          require your consent, we will be sure to notify you and request for
-          your said updatedconsent as you proceed with using the platform.
-          Otherwise, changes will be rendered effectiveimmediately upon posting.
+          information, all your privacy rights in relation to that data, and the
+          people/organizations with whom we may share it with when necessary.
+          The content of this Privacy Statement may be updated or amended from
+          time to time to align with any future platform configurations, and to
+          comply with any changes in relevant laws and policies. Should these
+          changes require your consent, we will be sure to notify you and
+          request for your said updatedconsent as you proceed with using the
+          platform. Otherwise, changes will be rendered effective immediately
+          upon posting.
         </Text>
       </Stack>
 
@@ -60,7 +61,7 @@ const Page = () => {
         <Text lineHeight="relaxed">
           Personal Information refers to any information, whether recorded in a
           material form or not, from which the identity of an individual is
-          apparent or can be reasonably and directly ascertained by theentity
+          apparent or can be reasonably and directly ascertained by the entity
           holding the information, or when put together with other information
           would directly and certainly identify an individual;
         </Text>
