@@ -42,8 +42,8 @@ const MFISection = () => {
           existing clients, disbursement, payment and recording
         </Text>
 
-        <Button intent="primary" size="large" className="mt-ds-8">
-          Join as Partner
+        <Button intent="primary" size="large" className="mt-ds-8" disabled>
+          Join as Partner (Coming Soon)
         </Button>
       </Stack>
 

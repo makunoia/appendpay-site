@@ -27,7 +27,7 @@ const FeaturesSection = () => {
 
   const { rive: MessageRive, RiveComponent: Message } = useRive({
     src,
-    artboard: "Message",
+    artboard: "Withdraw",
     stateMachines: "Default",
     layout,
     autoplay,
@@ -93,8 +93,8 @@ const FeaturesSection = () => {
         />
 
         <MotionCard
-          title="Load Mobile"
-          desc="Iwasang maubusan ng data"
+          title="Withdraw Money"
+          desc="Kunin ang pera anytime"
           className="row-span-1 col-span-5 lg:col-span-3 h-[200px]"
           invertStack
           riveComponent={<Message />}
