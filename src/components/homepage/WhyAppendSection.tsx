@@ -213,8 +213,8 @@ const WhyAppendSection = () => {
             Why choose AppendPay?
           </Text>
           <Text as="p" size="body-large" lineHeight="relaxed" className="text">
-            Lorem ipsum dolor sit amet consectetur. Egestas lorem enim egestas
-            leo diam eget. Egestas scelerisqueh tincidunt sit fames hac dictum.
+            Whether you&apos;re a partner or a client, AppendPay simplifies your
+            financial journey, saves you time, and helps your business thrive.
           </Text>
         </Stack>
 
