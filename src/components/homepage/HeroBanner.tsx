@@ -16,7 +16,7 @@ const HeroBanner = () => {
       />
 
       <Image
-        className="absolute top-[400px] md:bottom-[-70%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[10%] lg:top-[5%]"
+        className="absolute top-[350px] md:bottom-[-60%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[10%] lg:top-[5%]"
         src="/hero_image.png"
         width={350}
         height={500}
@@ -29,7 +29,7 @@ const HeroBanner = () => {
 
       <Stack
         gap={32}
-        className="absolute items-center lg:items-start z-10 w-10/12 top-[10%] lg:max-w-lg h-fit lg:top-[100px] left-[10%] lg:left-auto lg:right-[3%] xl:right-[5%]"
+        className="absolute items-center lg:items-start z-10 w-10/12 top-[10%] lg:max-w-lg h-fit lg:top-[100px] left-[10%] lg:left-auto lg:right-[1%] xl:right-[5%]"
       >
         <h1 className="brandedText text-center lg:text-left font-bold text-brand leading-[3rem] text-[3rem] md:leading-[4rem] md:text-[4rem] lg:leading-[4.5rem] lg:text-[4.5rem]">
           Micro-loans para sa mga mamamayang Pilipino

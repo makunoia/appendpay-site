@@ -208,7 +208,7 @@ const WhyAppendSection = () => {
     >
       {/* Switch and Buttons */}
       <Stack gap={32} className="px-[5%]">
-        <Stack gap={12} className="w-8/12">
+        <Stack gap={12} className="w-full lg:w-8/12">
           <Text as="h2" size="display" weight="bold" className="brandedText">
             Why choose AppendPay?
           </Text>

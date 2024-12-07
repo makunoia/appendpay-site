@@ -7,7 +7,7 @@ import { easeOut } from "framer-motion";
 
 const HeroBanner = () => {
   return (
-    <div className="relative mx-[5%] h-[80vw] md:h-[50vw] lg:max-h-[450px]  flex justify-end w-auto rounded-ds-16 mt-6 overflow-clip">
+    <div className="relative mx-[5%] h-[80vw] md:h-[50vw] lg:max-h-[450px] flex justify-end w-auto rounded-ds-16 mt-6 overflow-clip">
       <RiveComponent
         className="absolute -z-10  lg:top-0 right-0 left-0 w-full h-full"
         src="/rive/banners.riv"
