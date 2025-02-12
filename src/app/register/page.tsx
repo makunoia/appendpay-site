@@ -51,6 +51,7 @@ const Page = () => {
 
   const onSubmit = (data: FormData) => {
     console.log("Submitted Data:", data);
+    setFormDone(true);
   };
 
   return (
@@ -64,7 +65,7 @@ const Page = () => {
         </Text>
       </Stack>
 
-      {formDone ? (
+      {!formDone ? (
         <form onSubmit={handleSubmit(onSubmit)} className="w-[500px]">
           <Stack gap={16} className="w-full">
             {!billerType ? (
