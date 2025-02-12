@@ -4,8 +4,7 @@ import Stack from "@/components/molecules/Stack";
 import { useRouter } from "next/navigation";
 import { Alignment, Fit, Layout, useRive } from "@rive-app/react-canvas";
 import { useEffect } from "react";
-import Button from "../Button";
-// import Button from "@/components/Button";
+import Button from "@/components/Button";
 
 const MFISection = () => {
   const layout = new Layout({ fit: Fit.Cover, alignment: Alignment.Center });

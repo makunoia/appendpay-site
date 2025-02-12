@@ -8,8 +8,13 @@ import Choice from "@/components/Choice";
 import Stack from "@/components/molecules/Stack";
 import Text from "@/components/molecules/Text";
 import TextInput from "@/components/TextInput";
-import { RiAccountBox2Fill, RiUserLocationFill } from "react-icons/ri";
+import {
+  RiAccountBox2Fill,
+  RiCheckboxCircleFill,
+  RiUserLocationFill,
+} from "react-icons/ri";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   billerType: z.enum(["", "local", "integrated"], {
@@ -170,6 +175,7 @@ const BillerInfoForm = ({
               render={({ field }) => (
                 <TextInput
                   label="Biller Name"
+                  placeholder="Biller Name"
                   error={errors.billerName?.message}
                   {...field}
                 />
@@ -255,7 +261,26 @@ const BillerInfoForm = ({
 };
 
 const SuccessScreen = () => {
-  return <Card className="items-center">Thanks for registering!</Card>;
+  const router = useRouter();
+
+  return (
+    <Stack gap={12}>
+      <Card className="items-center">
+        <RiCheckboxCircleFill className="text-[40px] aspect-square text-success" />
+        <Stack align="center" gap={4}>
+          <Text size="heading" weight="medium">
+            Thanks for registering!
+          </Text>
+          <Text size="body" weight="normal" color="subtle">
+            Complete the information asked to get started
+          </Text>
+        </Stack>
+      </Card>
+      <Button fullWidth intent="primary" onClick={() => router.push("/")}>
+        Return to homepage
+      </Button>
+    </Stack>
+  );
 };
 
 export default Page;
