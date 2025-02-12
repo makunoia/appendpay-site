@@ -5,7 +5,7 @@ import { easeOut, motion } from "framer-motion";
 
 const MissionVision = () => {
   return (
-    <Stack className="w-10/12 mx-auto mt-ds-40" gap={40}>
+    <Stack className="w-10/12 mx-auto mt-mds-40" gap={40}>
       <Stack
         motion
         initial={{ opacity: 0, y: "-20%" }}
@@ -21,7 +21,6 @@ const MissionVision = () => {
 
         <Text
           size="heading"
-          lineHeight="loose"
           className="text-subtle text-center lg:text-left w-full lg:w-9/12 leading-8"
         >
           To support microfinance institutions (MFIs) and accelerate the growth
@@ -39,7 +38,7 @@ const MissionVision = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 1, ease: easeOut }}
           viewport={{ once: true }}
-          className="w-full lg:w-5/12 order-2 lg:order-1 opacity-0 bg-brand-subtle text-onBrand-subtle italic p-ds-32 rounded-tl-[60px] rounded-br-[60px]"
+          className="w-full lg:w-5/12 order-2 lg:order-1 opacity-0 bg-brand-subtle text-onBrand-subtle italic p-mds-32 rounded-tl-[60px] rounded-br-[60px]"
         >
           The demand-driven digital financial services we offer to our partner
           MFIs ensure that, despite the shift towards digitalization, they can
@@ -62,7 +61,6 @@ const MissionVision = () => {
 
           <Text
             size="heading"
-            lineHeight="loose"
             className="text-subtle text-center lg:text-right w-full leading-8"
           >
             We envision AppendPay as a leader in development finance, leveraging

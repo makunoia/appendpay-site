@@ -24,15 +24,15 @@ const MotionCard = ({
       gap={16}
       distribute="between"
       className={cn(
-        "w-full h-fit outline outline-1 outline-subtle rounded-ds-16 overflow-clip",
+        "w-full h-fit outline outline-1 outline-subtle rounded-mds-16 overflow-clip",
         className
       )}
       {...props}
     >
       <Stack
         gap={4}
-        className={`px-ds-24 ${
-          invertStack ? "order-2 pb-ds-24" : "order-1 pt-ds-32"
+        className={`px-mds-24 ${
+          invertStack ? "order-2 pb-mds-24" : "order-1 pt-mds-32"
         } `}
       >
         <Stack horizontal gap={4}>

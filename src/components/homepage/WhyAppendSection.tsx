@@ -102,9 +102,9 @@ const UserTypeSwitch = ({
   setIsUserSelected: Dispatch<SetStateAction<number>>;
 }) => {
   return (
-    <div className="relative flex w-fit gap-ds-24 py-ds-12 px-ds-16 bg-interface rounded-ds-24 outline outline-1 shadow drop-shadow-sm overflow-hidden">
+    <div className="relative flex w-fit gap-mds-24 py-mds-12 px-mds-16 bg-interface rounded-mds-24 outline outline-1 shadow drop-shadow-sm overflow-hidden">
       <div
-        className={`absolute bg-brand -z-10 my-auto top-1 bottom-1 rounded-ds-24 transition-transform ease-out ${
+        className={`absolute bg-brand -z-10 my-auto top-1 bottom-1 rounded-mds-24 transition-transform ease-out ${
           userSelected
             ? "-translate-x-3 w-[90px]"
             : "translate-x-[calc(75%)] w-[105px]"
@@ -118,9 +118,8 @@ const UserTypeSwitch = ({
           as="h2"
           size="body"
           weight="bold"
-          className={`${
-            userSelected === 1 ? "text-onBrand" : "text"
-          } select-none`}
+          className="transition-colors ease-out select-none"
+          color={userSelected === 1 ? "on-brand" : "default"}
         >
           As a user
         </Text>
@@ -133,9 +132,8 @@ const UserTypeSwitch = ({
           as="h2"
           size="body"
           weight="bold"
-          className={`${
-            userSelected === 0 ? "text-onBrand" : "text"
-          } transition-colors ease-out select-none`}
+          className="transition-colors ease-out select-none"
+          color={userSelected === 0 ? "on-brand" : "default"}
         >
           As a partner
         </Text>
@@ -169,18 +167,18 @@ const ReasonCard = ({
       transition={{ duration: 0.3, delay: index * 0.05 }}
       gap={16}
       className={cn(
-        `p-ds-32 rounded-ds-24 bg-interface h-fit mb-ds-24 ${
+        `p-mds-32 rounded-mds-24 bg-interface h-fit mb-mds-24 ${
           filler && "hidden lg:block md:invisible"
         }`
       )}
     >
       {Icon && (
-        <div className="bg-brand-subtle w-fit h-fit p-ds-12 rounded-ds-8">
+        <div className="bg-brand-subtle w-fit h-fit p-mds-12 rounded-mds-8">
           <Icon className="fill-icon-brand text-title" />
         </div>
       )}
       <Stack gap={8}>
-        <Text as="h2" size="subheading" weight="bold" className="text">
+        <Text as="h2" size="subheading" weight="bold" color="default">
           {title}
         </Text>
         <Text as="h2" size="body" className="text-subtle" lineHeight="tight">

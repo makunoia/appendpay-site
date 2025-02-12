@@ -73,7 +73,7 @@ const BrandStory = () => {
   });
 
   return (
-    <Stack justify="center" gap={60} className="pb-ds-60">
+    <Stack justify="center" gap={60} className="pb-mds-60">
       <Stack gap={8} className="relative overflow-visible">
         <Stack
           motion
@@ -114,7 +114,7 @@ const BrandStory = () => {
         transition={{ ease: easeOut, delay: 1 }}
         viewport={{ once: true }}
         gap={24}
-        className="bg opacity-0 bg-surface drop-shadow pb-ds-40 px-ds-40 lg:px-ds-60 rounded-b-[50px] w-11/12 lg:w-7/12 mx-auto"
+        className="bg opacity-0 bg-surface drop-shadow pb-mds-40 px-mds-40 lg:px-mds-60 rounded-b-[50px] w-11/12 lg:w-7/12 mx-auto"
       >
         <h2 className="text-title lg:text-display text-brand text-center w-full -mt-4">
           Founded by people on a mission
@@ -127,7 +127,7 @@ const BrandStory = () => {
       </Stack>
 
       <div
-        className="append-timeline grid grid-cols-11 gap-y-ds-32 md:gap-y-[0] align items-center"
+        className="append-timeline grid grid-cols-11 gap-y-mds-32 md:gap-y-[0] align items-center"
         id="timeline"
       >
         {/* 2010 CARD - FIRST CARD */}

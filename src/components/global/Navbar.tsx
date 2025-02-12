@@ -31,7 +31,7 @@ const Navbar = () => {
       </NextLink>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex flex-row gap-ds-24 text-heading">
+      <div className="hidden md:flex flex-row gap-mds-24 text-heading">
         <Link label="Loans" href="/#loans" />
         <Link label="Features" href="/#features" />
         <Link label="Partners" href="/#partners" />
@@ -63,7 +63,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="fixed top-0 right-0 bottom-0 bg-interface p-8 pr-32 drop-shadow-sm z-40 flex flex-col justify-center items-center"
           >
-            <div className="flex flex-col gap-ds-24 text-heading">
+            <div className="flex flex-col gap-mds-24 text-heading">
               <NextLink
                 className="text hover:text-brand transition-colors ease-out"
                 href="/#loans"

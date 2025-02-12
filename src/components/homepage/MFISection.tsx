@@ -1,6 +1,7 @@
 "use client";
 import Text from "@/components/molecules/Text";
 import Stack from "@/components/molecules/Stack";
+import { useRouter } from "next/navigation";
 import { Alignment, Fit, Layout, useRive } from "@rive-app/react-canvas";
 import { useEffect } from "react";
 import Button from "../Button";
@@ -10,6 +11,7 @@ const MFISection = () => {
   const layout = new Layout({ fit: Fit.Cover, alignment: Alignment.Center });
   const autoplay = false;
   const src = "/rive/appendpay_motion.riv";
+  const router = useRouter();
 
   const { rive: PartnersGridRive, RiveComponent: PartnersGrid } = useRive({
     src,
@@ -25,7 +27,7 @@ const MFISection = () => {
 
   return (
     <Stack
-      className="flex flex-col md:flex-row gap-ds-60 lg:gap-ds-24"
+      className="flex flex-col md:flex-row gap-mds-60 lg:gap-mds-24"
       distribute="between"
       align="center"
       as="section"
@@ -42,8 +44,13 @@ const MFISection = () => {
           existing clients, disbursement, payment and recording
         </Text>
 
-        <Button intent="primary" size="large" className="mt-ds-8" disabled>
-          Join as Partner (Coming Soon)
+        <Button
+          intent="primary"
+          size="lg"
+          className="mt-mds-8 w-fit"
+          onClick={() => router.push("/register")}
+        >
+          Join as Partner
         </Button>
       </Stack>
 

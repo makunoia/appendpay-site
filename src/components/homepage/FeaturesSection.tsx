@@ -76,7 +76,7 @@ const FeaturesSection = () => {
         </Text>
       </Stack>
 
-      <div className="w-full h-fit grid grid-rows-2 grid-cols-10 gap-ds-24">
+      <div className="w-full h-fit grid grid-rows-2 grid-cols-10 gap-mds-24">
         <MotionCard
           title="Bank Transfer"
           desc="Magpadala ng pera sa ibang bangko"

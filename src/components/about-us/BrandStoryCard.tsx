@@ -18,7 +18,7 @@ const BrandStoryCard = ({
       id={id}
       gap={10}
       className={cn(
-        "bg bg-surface drop-shadow pb-ds-24 px-ds-24 rounded-ds-16 w-fit h-fit mx-auto",
+        "bg bg-surface drop-shadow pb-mds-24 px-mds-24 rounded-mds-16 w-fit h-fit mx-auto",
         className
       )}
     >

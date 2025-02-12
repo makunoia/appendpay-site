@@ -8,7 +8,7 @@ const Page = () => {
         gap={6}
         align="center"
         justify="center"
-        className="h-[250px] w-full bg-brand-subtle rounded-ds-16"
+        className="h-[250px] w-full bg-brand-subtle rounded-mds-16"
       >
         <Text size="overline" className="text-onBrand-subtle" weight="bold">
           Updated December 2024
@@ -22,7 +22,7 @@ const Page = () => {
           Terms of Service
         </Text>
 
-        <ul className="flex flex-col gap-ds-8 w-5/6">
+        <ul className="flex flex-col gap-mds-8 w-5/6">
           <li>
             <Text lineHeight="relaxed">
               Misuse of our AppendPay Mobile Service or unauthorized access
@@ -102,7 +102,7 @@ const Page = () => {
           following purposes:
         </Text>
 
-        <ul className="flex flex-col gap-ds-2 w-5/6 pb-3">
+        <ul className="flex flex-col gap-mds-2 w-5/6 pb-3">
           <li>
             <Text weight="medium">Loan Application</Text>
           </li>

@@ -70,7 +70,7 @@ const LoanSection = () => {
         </Text>
       </Stack>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-ds-16">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-mds-16">
         <MotionCard
           title="I-download ang app"
           desc="Available both on Android and iOS"

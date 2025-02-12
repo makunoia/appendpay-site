@@ -3,7 +3,7 @@ import Stack from "@/components/molecules/Stack";
 
 const TechPartner = () => {
   return (
-    <Stack gap={40} className="my-[5%]">
+    <Stack gap={40} className="m-[5%]">
       <Stack gap={16}>
         <Text size="display" weight="bold" className="text-brand">
           Our Technology Partner

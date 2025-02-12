@@ -8,7 +8,7 @@ const Page = () => {
         gap={6}
         align="center"
         justify="center"
-        className="h-[250px] w-full bg-brand-subtle rounded-ds-16"
+        className="h-[250px] w-full bg-brand-subtle rounded-mds-16"
       >
         <Text size="overline" className="text-onBrand-subtle" weight="bold">
           Updated December 2023
@@ -66,7 +66,7 @@ const Page = () => {
           would directly and certainly identify an individual;
         </Text>
 
-        <ul className="flex flex-col gap-ds-8 w-5/6 mt-6">
+        <ul className="flex flex-col gap-mds-8 w-5/6 mt-6">
           <li>
             <Text weight="bold">Data Subject/User </Text>
             <Text lineHeight="relaxed">

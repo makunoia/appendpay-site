@@ -1,5 +1,3 @@
-"use client";
-
 import { type ReactNode } from "react";
 import { type VariantProps, cva } from "class-variance-authority";
 import {
@@ -48,21 +46,21 @@ const StackStyles = cva("flex", {
       stretch: "*:flex-grow justify-stretch content-stretch",
     },
     gap: {
-      2: "gap-ds-2",
-      4: "gap-ds-4",
-      6: "gap-ds-6",
-      8: "gap-ds-8",
-      10: "gap-ds-10",
-      12: "gap-ds-12",
-      14: "gap-ds-14",
-      16: "gap-ds-16",
-      18: "gap-ds-18",
-      20: "gap-ds-20",
-      24: "gap-ds-24",
-      28: "gap-ds-28",
-      32: "gap-ds-32",
-      40: "gap-ds-40",
-      60: "gap-ds-60",
+      2: "gap-mds-2",
+      4: "gap-mds-4",
+      6: "gap-mds-6",
+      8: "gap-mds-8",
+      10: "gap-mds-10",
+      12: "gap-mds-12",
+      14: "gap-mds-14",
+      16: "gap-mds-16",
+      18: "gap-mds-18",
+      20: "gap-mds-20",
+      24: "gap-mds-24",
+      28: "gap-mds-28",
+      32: "gap-mds-32",
+      40: "gap-mds-40",
+      60: "gap-mds-60",
     },
   },
 });
